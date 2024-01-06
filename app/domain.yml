@@ -1,0 +1,41 @@
+version: "3.1"
+
+# Sample FAQs from https://up.edu.ph/frequently-asked-questions/
+
+intents:
+  - greet
+  - goodbye
+  - thanks
+  - bot_challenge
+  - ask_faq1
+  - ask_faq2
+  - ask_faq3
+
+responses:
+  utter_greet:
+  - text: "Hi I'm UPCHAT! I can answer FAQs about UP (University of the Philippines). How can I help you?"
+
+  utter_goodbye:
+  - text: "Bye! Take care!"
+
+  utter_iamabot:
+  - text: "I'm UPCHAT, a bot powered by Rasa. I can answer FAQs about UP (University of the Philippines)"
+
+  utter_faq1:
+  - text: "UP offers several undergraduate degree non-baccalaureate degree programs. For a full list, please visit https://upcat.up.edu.ph/htmls/courses.html"
+
+  utter_faq2:
+  - text: "Traditionally, prospective UP students are screened through the UP College Admission Test (UPCAT). It is held once a year in the different constituent units of the University, as well as in select examination centers all over the country. The applications are filed prior to the date of the examinations.\n For student athletes, the Varsity Athletic Admission System (VAAS), administered by the College of Human Kinetics of UP Diliman, awards slots to exemplary applicants who may not have taken or passed the UPCAT, after a stringent system of tryouts. VAAS students are required to represent the university in national or international sports competitions to maintain their status as UP students."
+
+  utter_faq3:
+  - text: "As the national university, UP is funded by the Philippine government. With this, the tuition fees of UP students are minimal. Added to this, UP students are also able to access other support services which would further defray the cost of their education. Through the Student Learning Assistance System, students can avail of discounted tuition fees to full tuition fee waivers, plus cash subsidies, according to their individual income brackets."
+
+  utter_please_rephrase:
+  - text: "Sorry, I cannot understand your inquiry. Please rephrase your message."
+
+  utter_your_welcome:
+  - text: "You're welcome! Happy to help! Feel free to ask me questions."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

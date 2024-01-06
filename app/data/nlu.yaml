@@ -1,0 +1,76 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey 
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Kamusta
+    - musta
+    - annyeonghaseyo
+    
+- intent: goodbye
+  examples: |
+    - see you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - Annyeong
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: thanks
+  examples: |
+   - Thanks! 
+   - Thank you!
+   - That helps!
+   - That was helpful!
+   - appreciate it!
+
+- intent: ask_faq1
+  examples: |
+   - What are the degree courses offered by UP?
+   - please provide me with a list of your available degree programs
+   - What are the specializations or tracks available?
+   - What can I study in UP?
+   - I'm looking for degree programs. What options do you have?
+  
+- intent: ask_faq2
+  examples: |
+   - How can one qualify for admission into UP?
+   - How can I get into UP?
+   - I want to apply to UP.
+   - How can I apply to Up?
+   - What are the criteria for admissions?
+   - How can I be accepted in UP?
+   - What are the admission requirements?
+
+- intent: ask_faq3
+  examples: |
+   - What is UP’s tuition rate?
+   - How much is UP?
+   - How much is the tuition fee?
+   - What is the price per unit?
+   - Can I afford to study in UP?
+   - How much will it cost to study in UP?
+   

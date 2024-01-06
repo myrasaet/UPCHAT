@@ -1,0 +1,46 @@
+version: "3.1"
+
+rules:
+
+- rule: Say a greeting anytime the user greets
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say you're welcome anytime the user says thanks
+  steps:
+  - intent: thanks
+  - action: utter_your_welcome
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+
+- rule: Answer FAQ1
+  steps:
+  - intent: ask_faq1
+  - action: utter_faq1
+
+- rule: Answer FAQ2
+  steps:
+  - intent: ask_faq2
+  - action: utter_faq2
+
+- rule: Answer FAQ3
+  steps:
+  - intent: ask_faq3
+  - action: utter_faq3
+
+
+
