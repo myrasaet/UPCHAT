@@ -7,7 +7,7 @@ Currently, UPCHAT can answer 3 FAQs:
 - What is UP’s tuition rate?
 
 ## Set-up
-Open command line in the same directory of this project.
+Open command line in the same directory of this project. Python version should be between 2.7 and 3.10
 
 1. Install venv
     ```bash
